@@ -92,17 +92,17 @@ Fehlermeldung:
 - "Erfahrungsaustausch mit anderen Nutzern"
 - "Feature-Ideen diskutieren"
 
-### 3. ✉️ E-Mail Support
-**Für**: Private Anfragen, Geschäftliches, Sicherheitsprobleme
+### 3. 🔒 GitHub Security Advisories
+**Für**: Sicherheitsprobleme und Schwachstellen
 
-**E-Mail**: [support@marifl.example.com] *(Bitte durch tatsächliche Support-E-Mail ersetzen)*
+**Link**: [Security Advisories](https://github.com/marifl/marifl_crawling/security/advisories)
 
-**Bearbeitungszeit**: 1-3 Werktage
+**Bearbeitungszeit**: 1-7 Tage
 
-**Bitte verwenden Sie E-Mail nur für:**
-- Private oder sensible Anfragen
-- Geschäftliche Partnerschaften
-- Sicherheitsprobleme (siehe [SECURITY.md](SECURITY.md))
+**Bitte verwenden Sie Security Advisories für:**
+- Sicherheitslücken oder -schwachstellen
+- Potentielle Exploits
+- Andere sicherheitsrelevante Probleme
 
 ## 📚 Selbsthilfe-Ressourcen
 
@@ -146,14 +146,16 @@ Wenn Sie ein Issue erstellen, werden diese Labels verwendet:
 
 ## ⏰ Response-Zeiten
 
+Als Einzelentwickler strebe ich folgende Antwortzeiten an:
+
 **GitHub Issues/Discussions:**
 - **Erste Antwort**: 1-3 Tage
 - **Bugfixes**: 1-2 Wochen (je nach Komplexität)
 - **Features**: 2-4 Wochen (nach Diskussion)
 
-**E-Mail:**
-- **Erste Antwort**: 1-3 Werktage
-- **Detaillierte Antwort**: 3-7 Werktage
+**Security Advisories:**
+- **Erste Antwort**: 1-7 Tage
+- **Detaillierte Antwort**: 1-4 Wochen
 
 ## 🤝 Community Support
 

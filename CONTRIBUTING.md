@@ -142,8 +142,8 @@ Besonders willkommen sind Beiträge in diesen Bereichen:
 ## 📞 Fragen oder Hilfe?
 
 - **GitHub Issues**: Für Bugs und Feature-Requests
-- **Diskussionen**: Für allgemeine Fragen und Ideen
-- **E-Mail**: Für private oder sicherheitsrelevante Anfragen
+- **GitHub Discussions**: Für allgemeine Fragen und Ideen
+- **GitHub Security Advisories**: Für sicherheitsrelevante Probleme
 
 ## 🙏 Anerkennung
 

@@ -42,7 +42,7 @@ Dieser Verhaltenskodex gilt in allen Community-Räumen und gilt auch, wenn eine 
 
 Fälle von missbräuchlichem, belästigendem oder anderweitig inakzeptablem Verhalten können den Community-Führungskräften gemeldet werden, die für die Durchsetzung zuständig sind unter:
 
-**E-Mail**: [marifl.contact@example.com] *(Bitte durch tatsächliche Kontakt-E-Mail ersetzen)*
+**GitHub Issues**: Für die Meldung von Verstößen gegen den Verhaltenskodex
 
 Alle Beschwerden werden umgehend und fair überprüft und untersucht.
 

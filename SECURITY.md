@@ -2,12 +2,13 @@
 
 ## 🚨 Meldung von Sicherheitslücken
 
-Die Sicherheit von `marifl_crawling` ist uns sehr wichtig. Wenn Sie eine Sicherheitslücke in diesem Projekt entdecken, bitten wir Sie, uns diese verantwortungsvoll zu melden.
+Da `marifl_crawling` eine **lokale Anwendung** ist, die keine Benutzerdaten sammelt oder überträgt, sind die Sicherheitsrisiken begrenzt. Dennoch nehme ich Sicherheit ernst.
 
 ### ⚡ Schnellmeldung
 
-**Für kritische Sicherheitslücken:**
-- **E-Mail**: [security@marifl.example.com] *(Bitte durch tatsächliche Sicherheits-E-Mail ersetzen)*
+**Für Sicherheitslücken:**
+- **GitHub Security Advisories**: Verwenden Sie GitHubs Private Vulnerability Reporting
+- **GitHub Issues**: Für weniger kritische Sicherheitsprobleme
 - **Betreff**: `[SECURITY] marifl_crawling - [Kurze Beschreibung]`
 
 ### 📋 Was zu melden ist
@@ -65,31 +66,31 @@ Proof of Concept:
 
 ### ⏰ Response-Zeiten
 
-Wir streben folgende Antwortzeiten an:
+Als Einzelentwickler strebe ich folgende Antwortzeiten an:
 
-- **Bestätigung des Eingangs**: Innerhalb von 24 Stunden
-- **Erste Bewertung**: Innerhalb von 72 Stunden
-- **Status-Update**: Wöchentlich bis zur Lösung
-- **Fix-Release**: Je nach Schweregrad 7-30 Tage
+- **Bestätigung des Eingangs**: Innerhalb von 48 Stunden
+- **Erste Bewertung**: Innerhalb von einer Woche
+- **Status-Update**: Bei Bedarf während der Bearbeitung
+- **Fix-Release**: Je nach Schweregrad 1-4 Wochen
 
-### 🔄 Unser Prozess
+### 🔄 Mein Prozess
 
-1. **Eingang**: Wir bestätigen den Erhalt Ihres Berichts
-2. **Bewertung**: Wir bewerten Schweregrad und Auswirkungen
-3. **Entwicklung**: Wir entwickeln und testen einen Fix
-4. **Koordination**: Wir koordinieren die Veröffentlichung mit Ihnen
-5. **Release**: Wir veröffentlichen den Fix
-6. **Anerkennung**: Wir würdigen Ihren Beitrag (falls gewünscht)
+1. **Eingang**: Ich bestätige den Erhalt Ihres Berichts
+2. **Bewertung**: Ich bewerte Schweregrad und Auswirkungen
+3. **Entwicklung**: Ich entwickle und teste einen Fix
+4. **Koordination**: Ich koordiniere die Veröffentlichung mit Ihnen
+5. **Release**: Ich veröffentliche den Fix
+6. **Anerkennung**: Ich würdige Ihren Beitrag (falls gewünscht)
 
-### 🎯 Verantwortliche Offenlegung
+### 🎅 Verantwortliche Offenlegung
 
-Wir folgen dem Prinzip der **responsible disclosure**:
+Ich folge dem Prinzip der **responsible disclosure**:
 
 #### ✅ Bitte TUN Sie:
-- Geben Sie uns angemessene Zeit, das Problem zu beheben
+- Geben Sie mir angemessene Zeit, das Problem zu beheben
 - Vermeiden Sie den Zugriff auf fremde Daten
 - Demonstrieren Sie die Schwachstelle nur minimal
-- Informieren Sie uns über alle betroffenen Versionen
+- Informieren Sie mich über alle betroffenen Versionen
 
 #### ❌ Bitte tun Sie NICHT:
 - Die Schwachstelle öffentlich preisgeben, bevor ein Fix verfügbar ist
@@ -99,10 +100,10 @@ Wir folgen dem Prinzip der **responsible disclosure**:
 
 ### 🏆 Anerkennung
 
-Wir sind dankbar für verantwortungsvolle Sicherheitsforscher und möchten angemessene Anerkennung bieten:
+Ich bin dankbar für verantwortungsvolle Sicherheitsforscher und möchte angemessene Anerkennung bieten:
 
-#### 🎖️ Hall of Fame
-Berichterstatter werden (mit ihrer Erlaubnis) in unserer Sicherheits-Hall-of-Fame erwähnt:
+#### 🏅️ Hall of Fame
+Berichterstatter werden (mit ihrer Erlaubnis) in der Sicherheits-Hall-of-Fame erwähnt:
 
 - **[Ihr Name]** - [Datum] - [Art der Schwachstelle]
 
@@ -113,7 +114,7 @@ Berichterstatter werden (mit ihrer Erlaubnis) in unserer Sicherheits-Hall-of-Fam
 
 ### 🛡️ Unterstützte Versionen
 
-Wir unterstützen Sicherheitsupdates für folgende Versionen:
+Ich unterstütze Sicherheitsupdates für folgende Versionen:
 
 | Version | Unterstützt          |
 | ------- | -------------------- |
@@ -146,7 +147,7 @@ Um die Sicherheit bei der Nutzung von `marifl_crawling` zu maximieren:
 
 Für nicht-sicherheitsrelevante Fragen:
 - **GitHub Issues**: Für Bugs und Features
-- **E-Mail**: [info@marifl.example.com] *(Bitte durch tatsächliche Kontakt-E-Mail ersetzen)*
+- **GitHub Discussions**: Für allgemeine Fragen
 
 ---
 
