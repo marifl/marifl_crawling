@@ -1,10 +1,10 @@
 # 🕷️ marifl_crawling - Smart Website Crawler
 
-[![Python Version](https://img.shields.io/badge/python-3.13%2B-blue)](https://www.python.org/downloads/)
+[![Python Version](https://img.shields.io/badge/python-3.10%2B-blue)](https://www.python.org/downloads/)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE.md)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
-Ein leistungsstarker, intelligenter Website-Crawler, der die richtige Kapitelreihenfolge aus der Website-Navigation beibehält. Entwickelt mit `crawl4ai` für robuste Crawling-Funktionen.
+Ein leistungsstarker, intelligenter Website-Crawler, der speziell für das Scrapen von **Bookdown-Seiten** entwickelt wurde. Er behält die richtige Kapitelreihenfolge aus der Website-Navigation bei und eignet sich perfekt für das Herunterladen von Online-Büchern und Dokumentationen. Entwickelt mit `crawl4ai` für robuste Crawling-Funktionen.
 
 > 🤖 Dieses Projekt wurde in Zusammenarbeit mit GitHub Copilot entwickelt
 
@@ -20,7 +20,7 @@ Ein leistungsstarker, intelligenter Website-Crawler, der die richtige Kapitelrei
 
 ## 📋 Voraussetzungen
 
-- Python 3.13 oder höher
+- Python 3.10 oder höher
 - Abhängigkeiten werden über `pyproject.toml` verwaltet
 
 ## 🚀 Installation
@@ -89,12 +89,31 @@ scrwl -u https://example.com/docs -o ./output -f md -m 10
 scrwl -u https://example.com/docs -o ./output -f md -d 1.0 -c -N -m 20
 ```
 
-### Anwendungsbeispiele
+### 📚 Bookdown-spezifische Nutzung
+
+Dieses Tool wurde speziell für das Scrapen von Bookdown-Seiten entwickelt. Bookdown erstellt Online-Bücher mit einer strukturierten Kapitelnavigation, die der Crawler intelligent erkennt und bewahrt.
 
 ```bash
-# Eine Bookdown-Seite mit sauberem Markdown-Ausgang crawlen
+# Typische Bookdown-Seite crawlen
 scrwl -u https://bookdown.org/yihui/rmarkdown/index.html -o ./rmarkdown_book -f md -d 0.5 -c
 
+# R für Data Science Buch (beliebtes Bookdown-Beispiel)
+scrwl -u https://r4ds.had.co.nz/index.html -o ./r4ds -f md -d 1.0 -c -N
+
+# Akademisches Buch mit spezifischen Kapiteln
+scrwl -u https://example.bookdown.org/book/index.html -o ./academic_book -f md -fil "chapter-[1-5]|introduction|conclusion" -c
+```
+
+**Bookdown-spezifische Funktionen:**
+- ✅ Erkennt automatisch Bookdown-Navigation
+- ✅ Bewahrt Kapitelreihenfolge bei
+- ✅ Korrigiert interne Links zwischen Kapiteln
+- ✅ Entfernt Bookdown-spezifische UI-Elemente bei Bedarf
+- ✅ Optimiert für typische Bookdown-Strukturen
+
+### Weitere Anwendungsbeispiele
+
+```bash
 # Dokumentation mit bestimmten Kapiteln nur crawlen
 scrwl -u https://docs.python.org/3/tutorial/index.html -o ./python_tutorial -f md -fil "introduction|data-structures|classes" -c
 
