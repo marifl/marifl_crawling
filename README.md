@@ -42,6 +42,8 @@ uv run crawl4ai-setup
 uv tool install .
 
 # Jetzt kannst du 'scrwl' direkt verwenden ohne 'uv run'
+# Das Tool ist nun GLOBAL verfügbar - du kannst es von überall auf deinem Computer ausführen!
+# Weitere Informationen: https://docs.astral.sh/uv/guides/tools/
 ```
 
 ### Mit pip
@@ -62,8 +64,14 @@ python -m crawl4ai.install
 
 **Wichtig**: Es gibt zwei Wege, den `scrwl` Befehl zu verwenden:
 
-1. **Mit `uv tool install .`** (empfohlen): Du kannst `scrwl` direkt verwenden
-2. **Ohne tool install**: Du musst `uv run scrwl` verwenden
+1. **Mit `uv tool install .`** (empfohlen): 
+   - `scrwl` wird **global** installiert und ist von **überall** auf deinem Computer verfügbar
+   - Du kannst `scrwl` direkt aus jedem Verzeichnis ausführen
+   - Solange `uv` installiert bleibt, funktioniert `scrwl` system-weit
+   
+2. **Ohne tool install**: 
+   - Du musst `uv run scrwl` verwenden
+   - Nur innerhalb des Repository-Verzeichnisses verfügbar
 
 ### Grundlegende Verwendung
 
@@ -77,6 +85,30 @@ uv run scrwl -u https://example.com/docs/index.html -o ./output -f html
 # Crawlen und als Markdown speichern
 scrwl -u https://example.com/docs/index.html -o ./output -f md
 ```
+
+### 🌍 Globale Verfügbarkeit
+
+Nach der Installation mit `uv tool install .` kannst du `scrwl` von **überall** auf deinem Computer verwenden:
+
+```bash
+# Von deinem Home-Verzeichnis
+cd ~
+scrwl -u https://r4ds.had.co.nz/index.html -o ./downloads/r4ds -f md
+
+# Von jedem beliebigen Verzeichnis
+cd /tmp
+scrwl -u https://bookdown.org/yihui/rmarkdown/index.html -o ./books/rmarkdown -f md
+
+# Solange uv installiert ist, funktioniert scrwl system-weit!
+```
+
+**Vorteile der globalen Installation:**
+- ✅ Funktioniert aus jedem Verzeichnis
+- ✅ Keine Notwendigkeit, ins Repository-Verzeichnis zu wechseln
+- ✅ Kürzere Befehle (kein `uv run` erforderlich)
+- ✅ Integration in Scripts und Automatisierung
+
+> 📖 **Weitere Informationen über uv tools**: [UV Tools Documentation](https://docs.astral.sh/uv/guides/tools/)
 
 ### Erweiterte Verwendung
 
