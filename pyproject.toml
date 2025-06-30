@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "smart-crawler"
+version = "1.0.0"
+description = "Intelligenter Website Crawler mit erweiterten Optionen"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "requests",
+    "beautifulsoup4",
+    "html2text",
+    "crawl4ai",
+]
+
+[project.scripts]
+scrwl = "smart_crawler_final:main"
+
+[tool.setuptools]
+py-modules = ["smart_crawler_final"]
