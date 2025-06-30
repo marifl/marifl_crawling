@@ -1,7 +1,7 @@
 # 🕷️ marifl_crawling - Smart Website Crawler
 
 [![Python Version](https://img.shields.io/badge/python-3.13%2B-blue)](https://www.python.org/downloads/)
-[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE.md)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
 Ein leistungsstarker, intelligenter Website-Crawler, der die richtige Kapitelreihenfolge aus der Website-Navigation beibehält. Entwickelt mit `crawl4ai` für robuste Crawling-Funktionen.
@@ -260,7 +260,7 @@ pytest
 
 ## 📄 Lizenz
 
-Dieses Projekt ist lizenziert unter der MIT-Lizenz - siehe die [LICENSE](LICENSE)-Datei für Details.
+Dieses Projekt ist lizenziert unter der MIT-Lizenz - siehe die [LICENSE.md](LICENSE.md)-Datei für Details.
 
 ## 🙏 Danksagungen
 
