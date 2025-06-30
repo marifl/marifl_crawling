@@ -4,7 +4,7 @@
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE.md)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
-Ein leistungsstarker, intelligenter Website-Crawler, der speziell für das Scrapen von **Bookdown-Seiten** entwickelt wurde. Er behält die richtige Kapitelreihenfolge aus der Website-Navigation bei und eignet sich perfekt für das Herunterladen von Online-Büchern und Dokumentationen. Entwickelt mit `crawl4ai` für robuste Crawling-Funktionen.
+Ein leistungsstarker, intelligenter Website-Crawler, der speziell für das Scrapen von **Bookdown-Seiten** entwickelt wurde. Er behält die richtige Kapitelreihenfolge aus der Website-Navigation bei und eignet sich perfekt für das Herunterladen von Online-Büchern und Dokumentationen. Entwickelt mit [`crawl4ai`](https://github.com/unclecode/crawl4ai) für robuste Crawling-Funktionen.
 
 > 🤖 Dieses Projekt wurde in Zusammenarbeit mit GitHub Copilot entwickelt
 
@@ -35,7 +35,13 @@ cd marifl_crawling
 # Mit uv installieren
 uv sync
 
-# Der Befehl 'scrwl' ist nach der Installation verfügbar
+# Setze crawl4ai ein (zwingend erforderlich für Browser-Setup)
+uv run crawl4ai-setup
+
+# Optional: Installiere als uv tool für direkten Zugriff
+uv tool install .
+
+# Jetzt kannst du 'scrwl' direkt verwenden ohne 'uv run'
 ```
 
 ### Mit pip
@@ -47,15 +53,26 @@ cd marifl_crawling
 
 # Im Entwicklungsmodus installieren
 pip install -e .
+
+# Setup crawl4ai (zwingend erforderlich für Browser-Setup)
+python -m crawl4ai.install
 ```
 
 ## 📖 Verwendung
 
+**Wichtig**: Es gibt zwei Wege, den `scrwl` Befehl zu verwenden:
+
+1. **Mit `uv tool install .`** (empfohlen): Du kannst `scrwl` direkt verwenden
+2. **Ohne tool install**: Du musst `uv run scrwl` verwenden
+
 ### Grundlegende Verwendung
 
 ```bash
-# Eine Website crawlen und als HTML speichern
+# Mit uv tool install (direkter Zugriff)
 scrwl -u https://example.com/docs/index.html -o ./output -f html
+
+# Ohne tool install (über uv run)
+uv run scrwl -u https://example.com/docs/index.html -o ./output -f html
 
 # Crawlen und als Markdown speichern
 scrwl -u https://example.com/docs/index.html -o ./output -f md
