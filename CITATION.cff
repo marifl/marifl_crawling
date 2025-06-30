@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: "Wenn Sie diese Software verwenden, zitieren Sie sie bitte wie folgt."
+type: software
+title: "marifl_crawling: Intelligenter Website-Crawler für Bookdown-Seiten"
+version: 1.0.0
+date-released: 2025-06-30
+url: "https://github.com/marifl/marifl_crawling"
+repository-code: "https://github.com/marifl/marifl_crawling"
+abstract: "Ein leistungsstarker, intelligenter Website-Crawler, der speziell für das Scrapen von Bookdown-Seiten entwickelt wurde. Er behält die richtige Kapitelreihenfolge aus der Website-Navigation bei und eignet sich perfekt für das Herunterladen von Online-Büchern und Dokumentationen."
+authors:
+  - family-names: "marifl"
+    given-names: ""
+    orcid: ""
+    website: "https://github.com/marifl"
+keywords:
+  - "web-crawling"
+  - "bookdown"
+  - "documentation"
+  - "markdown"
+  - "html"
+  - "python"
+  - "scraping"
+  - "academic-tools"
+  - "research-tools"
+license: MIT
+preferred-citation:
+  type: software
+  title: "marifl_crawling: Intelligenter Website-Crawler für Bookdown-Seiten"
+  authors:
+    - family-names: "marifl"
+      given-names: ""
+  version: 1.0.0
+  date-released: 2025-06-30
+  url: "https://github.com/marifl/marifl_crawling"
